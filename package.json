@@ -5,7 +5,8 @@
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve",
-    "clean": "rm -rf public && mkdir public"
+    "clean": "rm -rf public && mkdir public",
+    "start": "eleventy --serve"
   },
   "keywords": [],
   "author": "",

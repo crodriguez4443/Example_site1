@@ -1,68 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: #000000;
     background-color: #FCF7F8;
   }
-  
-  .header {
-    text-align: center;
-    background-color: #275DAD;
-    color: white;
-    padding: 2em 0;
-  }
-  
- /* Hero Section */
-.hero {
-    position: relative;
-    text-align: center;
-    color: white;
-    background-color: #275DAD;
-    padding: 2em 0;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .hero-content h1 {
-    margin: 0.5em 0;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  }
-  
-  .hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-  }
-  
-  .hero-content button {
+ 
+ /* Navigation Section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+nav ul {
+    display: flex;
+    order: 2;
+}
+
+nav ul a {
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+
+}
+
+.cta {
     background-color: #FFC107;
-    color: #000;
     border: none;
-    padding: 0.8em 1.5em;
+    padding: 0.5em 1.5em;
     font-size: 1em;
     margin: 0.5em;
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+
+}
+
+
+ /* Hero Section */
+
+.bg-image{
+    background-image: url('../img/electrician-hero.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d9d9da;
+}
+
+.hero{
+    padding-top: 200px;
+    padding-bottom:200px;
+    width: 100%;
+    margin-left: 6rem;
+    margin-right: 12rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+ .hero-image {
+  width: 100%;
+  height: 100%;
+  
+} 
+  .hero-text {
+    width: 100%;
   }
   
-  .hero-content button:hover {
+  .hero-text h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    color: #8b4513;
+  }
+  
+  .hero-text p {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  }
+  
+  .hero-text button {
+    background-color: #FFC107;
+    color: #000;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    margin: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-text button:hover {
     background-color: #FFA000;
   }
   
-  .hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.6;
-    z-index: 1;
-  }
+  /* Services Section */
   
   .services {
     text-align: center;
