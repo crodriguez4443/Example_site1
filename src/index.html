@@ -1,114 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Electrician Services</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumming Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/nav.js"defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+        
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
-  <div class="bg-image">
-    <!-- Navigation Section -->
-    <div class="header">
-        <nav>
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            </ul>
+    <header class="header">
+        <a href="#" class="logo">Bespoke Web Design.</a>
+        <button class="mobile-nav-toggle" aria-controls="navigation-id" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav id="navigation-id" class="navbar" datavisible="false">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a> 
+            <a href="#">Contact</a>
         </nav>
-        <button class="cta" href="#">Get Started</button>
-    </div>
-  <!-- Hero Section -->
-    <main>
-        <div class="hero">
-        <div class = "hero-text">
-            <h1>Your Local Electrician</h1>
-            <p>Providing quality electrical services with a smile.</p>
-            <button>Schedule a Service</button>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Leaky pipes made easy</h1>
+            <h3>Exhale.We keep your hands clean</h3>
+            <p>We provide plumbing services for homes and businesses. We make plumming emergencies a breeze.</p>
+            <div class="btn-box">
+                <a href="#">Get Started</a>
+                <a href="#">Us in action</a>
+            </div>
         </div>
-
+        <div class="home-sci">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter' ></i></a>
+            <a href=""><i class='bx bxl-linkedin' ></i></a>
         </div>
-    </main>/
-  </div>
-  <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
-      <!-- Service 1 -->
-      <div class="service-card">
-        <img src="img/service1.png" alt="Service 1 Icon">
-        <h3>Emergency Repairs</h3>
-        <p>24/7 emergency electrical repairs to keep your home safe.</p>
-      </div>
-      <!-- Service 2 -->
-      <div class="service-card">
-        <img src="img/service2.png" alt="Service 2 Icon">
-        <h3>Installations</h3>
-        <p>Professional electrical installations for homes and businesses.</p>
-      </div>
-      <!-- Service 3 -->
-      <div class="service-card">
-        <img src="img/service3.png" alt="Service 3 Icon">
-        <h3>Maintenance</h3>
-        <p>Regular maintenance to ensure your electrical systems are running smoothly.</p>
-      </div>
-      <!-- Service 4 -->
-      <div class="service-card">
-        <img src="img/service4.png" alt="Service 4 Icon">
-        <h3>Inspections</h3>
-        <p>Comprehensive inspections to identify potential electrical issues.</p>
-      </div>
-    </div>
-  </section>
+        <span class="home-imgHover"></span>
+    </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>Customer Testimonials</h2>
-    <!-- Placeholder for testimonials from Google -->
-  </section>
-
-  <!-- Project Portfolio Section -->
-  <section class="portfolio">
-    <h2>Project Portfolio</h2>
-    <!-- Placeholder for project case studies -->
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <form action="#" method="POST">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <div class="contact-info">
-      <p>Email: electrician@example.com</p>
-      <p>Phone: +1234567890</p>
-      <p>Address: 123 Electrician St, Anytown, USA</p>
-    </div>
-    <div id="map"></div>
-    <div class="social-links">
-      <!-- Social Media Links -->
-    </div>
-    <div class="faq">
-      <h3>Frequently Asked Questions</h3>
-      <ul>
-        <li>Question 1: Answer to question 1.</li>
-        <li>Question 2: Answer to question 2.</li>
-      </ul>
-    </div>
-  </section>
-  <!-- Scripts -->
-  <script src="/js/scripts.js"></script>
 </body>
-</html>
