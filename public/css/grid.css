@@ -1,0 +1,61 @@
+/* Grid Layout */
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Row as Flex Container */
+.row {
+    display: grid;
+    grid-gap: 15px; /* Default gutter size */
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Column Spans */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }
+
+/* Responsive Adjustments */
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    [class*='col-'] {
+        grid-column: span 6; /* Make columns span 6 units in smaller screens */
+    }
+}
+
+/* Mobile - 360px */
+@media (max-width: 360px) {
+    .row {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    [class*='col-'] {
+        grid-column: span 12; /* Make columns span entire row in smallest screens (stacking) */
+    }
+}
+
+/* Large Desktop - 1024px and up */
+@media (min-width: 1024px) {
+    .col-6 { 
+        grid-column: span 3; /* Change 6-span columns to span 3 on large screens */
+    }
+}

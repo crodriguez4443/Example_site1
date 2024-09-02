@@ -3,6 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url(services.css);
+@import url(services2.css);
+@import url(grid.css); 
+ 
 
 /* Base Styles */
 
@@ -172,11 +175,13 @@ body {
   justify-content: space-between;
   width: 350px;
   height: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-content .btn-box::before {
   content:'';
-  position:absolute;
+  position:relative;
   top:0;
   right:0;
   width: 100%;
@@ -185,6 +190,8 @@ body {
   animation: showRight 1.3s ease forwards;
   animation-delay: .7s;
   z-index: 2;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -234,8 +241,10 @@ body {
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
+  align-self: center;
 
 }
+
 
 /* Button Hover Effects */
 
@@ -268,7 +277,7 @@ body {
 
 .btn-box a:before {
   content: '';
-  position: absolute;
+  position: inline-flex;
   top: 0;
   left: 0;
   width: 0%;
@@ -276,6 +285,8 @@ body {
   background: #081b29;
   z-index: -1;
   transition: 0.5s;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-box a:hover:before {
@@ -330,6 +341,12 @@ body {
 
 .home-sci a:hover:before {
   width: 100%;
+}
+
+.center-text {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* MEDIA QUERIES */
